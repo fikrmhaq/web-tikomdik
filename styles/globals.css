@@ -1,9 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  overflow: hidden;
+  /* background: linear-gradient(180deg, #161F26 0%, #121212 100%); */
+  /* background: linear-gradient(180deg, #F1F1F1 0%, #D2EBFF 100%); */
+  
+  scroll-behavior: smooth;
+}
+
+.white-theme {
+  color: #1E252B;
+  borderColor: #1E252B;
+}
+
+.black-theme-bg {
+  background: linear-gradient(180deg, #161F26 0%, #121212 100%);
+}
+
+.white-theme-bg {
+  background: linear-gradient(180deg, #F1F1F1 0%, #D2EBFF 100%);
+}
+
+.black-theme {
+  color: #F1F1F1;
+  borderColor: #F1F1F1;
+}
+
+.poppins {
+  font-family: 'Poppins', sans-serif;
+}
+
+.white-text {
+  color: #F1F1F1
+}
+
+.indicator-line {
+  height: 0px;
+  left: 80px;
+  top: 447px;
+
+  border: 2px solid ;
+}
+
+.indicator-line-short {
+  height: 0px;
+  left: 80px;
+  top: 510px;
+
+  border: 2px solid ;
+}
+
+.overview-image {
+  width: 781px;
+  height: 608px;
+  border-radius: 10px;
+}
+
+.overview-image-effect1 {
+  width: 781px;
+  height: 608px;
+  background: linear-gradient(180deg, rgba(20, 32, 138, 0.5) 0%, rgba(84, 0, 50, 0.5) 100%);
+  mix-blend-mode: hard-light;
+  border-radius: 10px;
+}
+
+.overview-image-effect2 {
+  background: linear-gradient(121.22deg, rgba(9, 22, 143, 0.45) 0%, rgba(167, 0, 0, 0.45) 100%);
+  mix-blend-mode: hard-light;
+  border-radius: 10px;
 }
 
 a {
@@ -13,14 +84,4 @@ a {
 
 * {
   box-sizing: border-box;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
 }
